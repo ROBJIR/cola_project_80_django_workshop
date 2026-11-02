@@ -1,0 +1,31 @@
+Create Django Workshop
+
+cd D:\60-projects\Gdisk\COLA-CodersLab\ONL_PYT_W_6358\projects\cola_project_80_django_workshop>
+
+pyCharm / Terminal:
+
+ django-admin startproject  moviebase project
+
+cd server
+
+python3 manage.py migrate
+python3 manage.py createsuperuser
+python3 manage.py startapp movielist
+
+
+bylo nutne doinstalovat 
+python -m pip install djangorestframework django-extensions
+python manage.py check
+python manage.py runserver localhost:8000
+
+-------------------------------------------
+zkopirovano z GIT Hubu
+-------------------------------------------
+
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+edit: settings.py / add to INSTALLED_APPS = [ ... , 'books',]
+
+python manage.py runserver localhost:8000
+
